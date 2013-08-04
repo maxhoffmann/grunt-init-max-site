@@ -1,0 +1,12 @@
+{
+  "name": "{%= name %}",
+  "version": "{%= version %}",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {
+  	"html5shiv-dist": "~3.6.2",
+  	"normalize-scss": "~2.1.2"
+  }
+}
