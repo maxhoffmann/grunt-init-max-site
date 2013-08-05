@@ -98,10 +98,10 @@ module.exports = function(grunt) {
         src: ['bower_components/html5shiv-dist/html5shiv.js', 'js/main.js'],
         dest: 'js/main.min.js'
       },
-        deploy: {
-            src: ['js/ext/*.min.js'],
-            dest: 'scripts/main.js'
-        }
+      deploy: {
+          src: ['js/ext/*.min.js'],
+          dest: 'scripts/main.js'
+      }
     },
 
     imagemin: {
@@ -148,9 +148,11 @@ module.exports = function(grunt) {
   // Default
   grunt.registerTask('default', ['connect:dev', 'watch']);
 
+  // Initialization
+  grunt.registerTask('init', ['sass:dev', 'concat:dev']);
+
   // Deployment
   grunt.registerTask('deploy', ['clean:deploy', 'imagemin:deploy', 'sass:deploy', 'uglify:deploy', 'copy:deploy']);
-
 
   // Deployment Test
   grunt.registerTask('dist', ['connect:dist', 'watch']);
