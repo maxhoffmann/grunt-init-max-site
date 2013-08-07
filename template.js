@@ -55,9 +55,10 @@ exports.template = function(grunt, init, done) {
         "grunt-contrib-clean": "~0.5.0",
         "grunt-contrib-concat": "~0.3.0",
         "grunt-contrib-uglify": "~0.2.2",
-        "grunt-contrib-sass": "~0.4.1",
         "grunt-contrib-copy": "~0.4.1",
         "grunt-contrib-imagemin": "~0.1.4",
+        "grunt-contrib-sass": "~0.4.1",
+        "grunt-contrib-coffee": "~0.7.0",
         "connect-livereload": "~0.2.0"
       }
 
